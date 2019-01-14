@@ -21,7 +21,9 @@ build = {
 	modules = {
 		pulseaudio = "pulseaudio.lua"
 	},
-	bin = {
-		lpulse = "cli.lua"
+	install = {
+		bin = {
+			lpulse = "cli.lua"
+		}
 	}
 }
