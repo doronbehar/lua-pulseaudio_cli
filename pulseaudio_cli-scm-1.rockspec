@@ -1,7 +1,7 @@
 package = "pulseaudio_cli"
 version = "scm-1"
 source = {
-	url = "https://gitlab.com/doronbehar/lua-pulseaudio_cli",
+	url = "git://gitlab.com/doronbehar/lua-pulseaudio_cli",
 }
 description = {
 	summary = "Control PulseAudio devices using the command line",

@@ -45,3 +45,8 @@ settings = {
 No error is produced if any of the fields is `nil`.
 
 ## Install
+
+```
+luarocks install pulseaudio_cli
+```
+
