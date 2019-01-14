@@ -44,6 +44,10 @@ settings = {
 
 No error is produced if any of the fields is `nil`.
 
+### Lower level API
+
+This luarock uses the [`pulseaudio_dbus`](https://github.com/stefano-m/lua-pulseaudio_dbus) library made by [@stefano-m](https://github.com/stefano-m) so it can be used instead if you desire a lower level API for controlling PulseAudio via D-Bus.
+
 ## Install
 
 ```
