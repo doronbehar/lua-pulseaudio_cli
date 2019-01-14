@@ -51,6 +51,5 @@ This luarock uses the [`pulseaudio_dbus`](https://github.com/stefano-m/lua-pulse
 ## Install
 
 ```
-luarocks install pulseaudio_cli
+luarocks install --server=http://luarocks.org/dev pulseaudio_cli
 ```
-
