@@ -51,5 +51,5 @@ This luarock uses the Lua bindings library for libpulse - [`pulseaudio`](https:/
 ## Install
 
 ```
-luarocks install --server=http://luarocks.org/dev pulseaudio_cli
+luarocks install pulseaudio_cli
 ```
