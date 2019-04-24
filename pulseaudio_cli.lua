@@ -60,7 +60,12 @@ Pulseaudio = function(settings)
 					print("failed setting " .. sink.index .. " as default sink")
 					return false
 				end
+			end
+		end
+		for _, sink in pairs(get_sinks_indexed()) do
+			if sink.default then
 				for _, sink_input in pairs(pulseaudio.get_sink_inputs()) do
+					sink_input.index = math.floor(sink_input.index)
 					if not pulseaudio.move_sink_input(sink_input.index, sink.index) then
 						print("failed to move sink input ".. sink_input.index .. " to sink indexed " .. sink.index)
 						return false
