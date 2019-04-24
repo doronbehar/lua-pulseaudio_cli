@@ -1,6 +1,7 @@
 #!/usr/bin/env lua
-local Pulseaudio = require('pulseaudio')
+local Pulseaudio = require('pulseaudio_cli')
 
+-- Remember to install rock lua_cliargs for this to work!
 local cli = require('cliargs')
 cli:set_name(arg[0])
 cli:set_description("Lua based pulseaudio CLI controller")
@@ -13,7 +14,12 @@ if not args and err then
 elseif args then
 	local pulseaudio = Pulseaudio({
 		sink_device = {
-			volume_step = args.step
+			volume_step = args.step,
+			volume_max = 100
+		},
+		source_device = {
+			volume_step = args.step,
+			volume_max = 100
 		}
 	})
 	if args.cmd == "down" or args.cmd == "up" then
