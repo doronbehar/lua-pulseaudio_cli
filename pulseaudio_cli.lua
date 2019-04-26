@@ -71,8 +71,8 @@ Pulseaudio = function(settings)
 						return false
 					end
 					print("moved sink input ".. sink_input.index .. " to sink indexed " .. sink.index)
-					return true
 				end
+				return true
 			end
 		end
 	end
