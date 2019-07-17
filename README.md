@@ -1,4 +1,4 @@
-# PulseAudio D-Bus command line controller
+# PulseAudio command line controller
 
 ## Introduction & Motivation
 
