@@ -28,5 +28,7 @@ elseif args then
 		return pulseaudio.cycle_sinks()
 	elseif args.cmd == "mute" then
 		return pulseaudio.toggle_muted()
+	else
+		return cli:print_usage()
 	end
 end

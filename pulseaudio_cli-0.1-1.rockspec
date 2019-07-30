@@ -1,12 +1,13 @@
 package = "pulseaudio_cli"
 version = "0.1-1"
 source = {
-	url = "https://gitlab.com/doronbehar/lua-pulseaudio_cli.git"
+	url = "git://github.com/doronbehar/lua-pulseaudio_cli.git",
+	tag = "v0.1"
 }
 description = {
 	summary = "Control PulseAudio devices using the command line",
 	detailed = "Using libpulse, control pulseaudio with multiple sources and sinks",
-	homepage = "https://gitlab.com/doronbehar/lua-pulseaudio_cli",
+	homepage = "https://github.com/doronbehar/lua-pulseaudio_cli",
 	license = "Apache v2.0"
 }
 supported_platforms = {
